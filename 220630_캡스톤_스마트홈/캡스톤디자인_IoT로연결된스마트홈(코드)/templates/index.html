@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+   
+<style>
+
+.state{
+    font-weight: bold;
+    float: right;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.hd{
+   
+    font-size:70px;
+}
+.name{
+    font-weight: bolder;
+    padding-left: 39%;
+    font-size: 25px;
+}
+.qw{
+    
+    display: inline-block;
+    margin-left: 38%;
+ 
+}
+.bt{
+    display: inline-block;
+    ;
+}
+input{
+    font-weight: bolder;
+    height: 70px;
+    width: 200px;
+    font-size: 30px;
+   
+}
+
+</style>
+
+<body>
+    <div class = 'qw'>
+        <p class = "hd">SMART HOME</p>
+        <p class="state">※상태: {{state}}</p>
+       <div class="qwe">
+       <p class="name"> 자동 </p>
+        <div class="bt">
+        <input  type="button" value="AUTO" style="background-color: skyblue;"  onclick="location.href='/switch/AUTO'";>
+        </div>
+        <div class="bt">
+        <input  type="button" value="MANUAL" style="background-color: skyblue;" onclick="location.href='/switch/MANUAL'";>
+        </div>
+       
+         </div>
+        <div class="qwe">
+        <p class="name"> 조명 </p>
+        <div class="bt">
+         <input type="button" value="ON" style="background-color:plum;" onclick="location.href='/switch/ON'";>
+         </div>
+         <div class="bt">
+         <input type="button" value="OFF" style="background-color: plum;" onclick="location.href='/switch/OFF'";>
+         </div>
+             </div>
+         <div class="qwe">
+            <p class="name"> 현관  </p>
+            <div class="bt">
+            <input type="button" value="OPEN1" style="background-color: rgb(255, 72, 72);" onclick="location.href='/switch/OPEN1'";>
+            </div>
+            <div class="bt">
+            <input type="button" value="CLOSE1" style="background-color: rgb(255, 72, 72);" onclick="location.href='/switch/CLOSE1'";>
+            </div>
+     </div>
+     <div class="qwe">
+        <p class="name"> 창문  </p>
+        <div class="bt">
+            <input type="button" value="OPEN2" style="background-color: lightgreen" onclick="location.href='/switch/OPEN2'";>
+            </div>
+            <div class="bt">
+            <input type="button" value="CLOSE2" style="background-color: lightgreen" onclick="location.href='/switch/CLOSE2'";>
+            </div>
+     </div>
+    </div>
+   
+</body>
+</html>
